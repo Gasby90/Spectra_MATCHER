@@ -2,10 +2,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%% SPECTRA MATCHER Ver 1.2 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%% Riccardo Gasbarrone, 2016 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% This script allow to identify an unknown spectrum comparing it with a 
-%%% pure spectra library when the euclidean distance calculated for
-%%% each library spectrum returns a small value,then is possible that the
-%%% spectrum is identified with the one in the library.
+%%% This script allows to identify an unknown spectrum comparing it with a 
+%%% pure spectra library. When the euclidean distance calculated for
+%%% each library spectrum returns a small value, then is possible that the
+%%% spectrum is identified with one occurring in the library.
 %% 
 %%% Minimum euclidean distance spectrum find in the library is then 
 %%% displayed and comparised with the original input spectrum.
@@ -103,7 +103,7 @@ ylabel('Identified spectrum')
 xlabel('Input spectrum')
 %% 
 %Calculate: coefficient of determination (R-Squared)
-%Ordinary — Ordinary (unadjusted) R-squared R^2 = SSR/SST
+%Ordinary â€” Ordinary (unadjusted) R-squared R^2 = SSR/SST
 %SSE is the sum of squared error, SSR is the sum of squared regression, 
 mdl = fitlm(b,is)
 %find local max and min; From: http://www.billauer.co.il/peakdet.html
